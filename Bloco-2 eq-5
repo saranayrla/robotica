@@ -1,0 +1,17 @@
+#include <iostream>
+
+using namespace std;
+
+float maior(float a,float b){
+    return(a>b)? a:b;
+}
+int main(){
+   float n1,n2;
+   cout<<"informe numero:";
+   cin>>n1;
+   cout<<"informe segundo numero:";
+   cin>>n2;
+   
+   float max=maior(n1,n2);
+   cout<<"o maior numero e "<<max<<endl;
+}
