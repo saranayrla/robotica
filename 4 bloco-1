@@ -1,0 +1,13 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int in =5;
+    float flo=2.5;
+    double dou=43564.6;
+    
+    cout<<"operador inteiro:"<<in<<endl;
+    cout<<"operador float:"<<flo<<endl;
+    cout<<"operador double:"<<dou<<endl;
+}
