@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+void trocar(int &a, int &b) {
+    int temp = a;
+    a = b;
+    b = temp;
+}
+
+int main() {
+    int x, y;
+
+    cout << "Digite o valor de x: ";
+    cin >> x;
+    cout << "Digite o valor de y: ";
+    cin >> y;
+
+    cout << "\nAntes da troca: x = " << x << ", y = " << y << endl;
+
+    trocar(x, y);
+
+    cout << "Depois da troca: x = " << x << ", y = " << y << endl;
+
+    return 0;
+}
