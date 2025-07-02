@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+#define BONUS_FIXO 150.0  
+
+int main() {
+    double salario;
+
+    cout << "Digite o salário: ";
+    cin >> salario;
+
+    double salarioComBonus = salario + BONUS_FIXO;
+
+    cout << "Salário com bônus: " << salarioComBonus << endl;
+
+    return 0;
+}
