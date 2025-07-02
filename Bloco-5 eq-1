@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+
+double calcularAreaRetangulo(double base, double altura) {
+    return base * altura;
+}
+
+int main() {
+    double base, altura;
+
+    cout << "Digite o valor da base: ";
+    cin >> base;
+    cout << "Digite o valor da altura: ";
+    cin >> altura;
+
+    double area = calcularAreaRetangulo(base, altura);
+
+    cout << "A área do retângulo é: " << area << endl;
+
+    return 0;
+}
