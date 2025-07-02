@@ -1,0 +1,29 @@
+#include <iostream>
+
+#include <string>
+
+using namespace std;
+
+void exibirSituacao(string nome, double nota) {
+    cout << "\nAluno: " << nome << endl;
+    cout << "Nota: " << nota << endl;
+    if (nota >= 7.0) {
+        cout << "Situação: Aprovado" << endl;
+    } else {
+        cout << "Situação: Reprovado" << endl;
+    }
+}
+
+int main() {
+    string nomeAluno;
+    double nota;
+
+    cout << "Digite o nome do aluno: ";
+    cin >> nomeAluno;
+    cout << "Digite a nota do aluno: ";
+    cin >> nota;
+
+    exibirSituacao(nomeAluno, nota);
+
+    return 0;
+}
