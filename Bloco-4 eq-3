@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+void incrementar(int *p) {
+    if (p != nullptr) {
+        (*p)++;
+    }
+}
+
+int main() {
+    int numero;
+
+    cout << "Digite um número inteiro: ";
+    cin >> numero;
+
+    incrementar(&numero);
+
+    cout << "Valor após incremento: " << numero << endl;
+
+    return 0;
+}
