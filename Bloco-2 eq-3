@@ -1,0 +1,11 @@
+#include <iostream>
+
+using namespace std;
+
+    void mensagem(){
+        cout<<"ola, bem vindo"<<endl;
+}
+int main(){
+    mensagem();
+    return 0;
+}
