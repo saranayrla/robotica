@@ -1,0 +1,17 @@
+#include <iostream>
+
+using namespace std;
+
+    int soma (int a,int b){
+        return a+b;
+}
+int main(){
+    int x,y;
+    cout<<"informe numero:";
+    cin>>x;
+     cout<<"informe segundo numero:";
+    cin>>y;
+    
+    int r = soma(x,y);
+    cout<<"a soma e "<<r<<endl;
+}
