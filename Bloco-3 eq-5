@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+
+void verificarAprovacao(int *nota) {
+    if (*nota >= 7) {
+        cout << "Aluno aprovado." << endl;
+    } else {
+        cout << "Aluno reprovado." << endl;
+    }
+}
+
+int main() {
+    int nota;
+
+    cout << "Digite a nota do aluno (0 a 10): ";
+    cin >> nota;
+
+    verificarAprovacao(&nota);
+
+    return 0;
+}
