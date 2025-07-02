@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+void alterarValores(int valor, int &referencia) {
+    valor = valor + 10;         
+    referencia = referencia + 10; 
+}
+
+int main() {
+    int a, b;
+
+    cout << "Digite um número (passado por valor): ";
+    cin >> a;
+    cout << "Digite outro número (passado por referência): ";
+    cin >> b;
+
+    cout << "\nAntes: a = " << a << ", b = " << b << endl;
+
+    alterarValores(a, b);
+
+    cout << "Depois: a = " << a << " (permaneceu igual), b = " << b << " (alterado)" << endl;
+
+    return 0;
+}
