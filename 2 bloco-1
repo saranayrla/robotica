@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int  n1 = 20;
+    int  n2 = 7;
+    
+    int soma=n1+n2;
+    int sub =n1-n2;
+    int divi = n1/n2;
+    int multi =n1*n2;
+    
+    std::cout<< "soma " << soma <<std :: endl;
+    std::cout<< "subtracao " << sub <<std :: endl;
+    std::cout<< "divisao " << divi <<std :: endl;
+    std::cout<< "multiplicao " << multi <<std :: endl;
+}
