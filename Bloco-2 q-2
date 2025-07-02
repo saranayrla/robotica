@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+    int ehPar(int num){
+        return(num % 2==0);
+}
+int main(){
+   int n;
+   cout <<"informe o numero";
+   cin>>n;
+   
+   if (ehPar(n)){
+       cout<<n<<"e par"<<endl;
+    }else{
+    cout<<n<<"e impar"<<endl;
+    }
+}
