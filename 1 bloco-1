@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int numero_inteiro= 10;
+char caractere= 'A';
+float numero_real= 3.14;
+bool booleano= true;
+short inteiro_curto = 100;
+long inteiro_longo = 1000000;
+
+std::cout<< "numero " << numero_inteiro <<std :: endl;
+std::cout<< "caractere " << caractere <<std :: endl;
+std::cout<< "numero real " << numero_real <<std :: endl;
+std::cout<< "booleano " << booleano <<std :: endl;
+std::cout<< "curto " << inteiro_curto<<std :: endl;
+std::cout<< "longo " << inteiro_longo<<std :: endl;
+ return 0;
+ 
+}
