@@ -1,0 +1,58 @@
+#include <iostream>
+using namespace std;
+
+const double LIMITE_SAQUE = 500.0;
+
+void saque(double &saldo) {
+    double valor;
+    cout << "Digite o valor para saque: ";
+    cin >> valor;
+    if (valor > saldo) {
+        cout << "Saldo insuficiente." << endl;
+    } else if (valor > LIMITE_SAQUE) {
+        cout << "Valor excede o limite de saque." << endl;
+    } else {
+        saldo -= valor;
+        cout << "Saque efetuado. Saldo atual: " << saldo << endl;
+    }
+}
+
+void deposito(double &saldo) {
+    double valor;
+    cout << "Digite o valor para depósito: ";
+    cin >> valor;
+    saldo += valor;
+    cout << "Depósito efetuado. Saldo atual: " << saldo << endl;
+}
+
+void consultarSaldo(double saldo) {
+    cout << "Saldo atual: " << saldo << endl;
+}
+
+void menu() {
+    double saldo = 0.0;
+    int opcao;
+    do {
+        cout << "\n=== Caixa Eletrônico ===" << endl;
+        cout << "1 - Sacar" << endl;
+        cout << "2 - Depositar" << endl;
+        cout << "3 - Consultar Saldo" << endl;
+        cout << "0 - Sair" << endl;
+        cout << "Escolha uma opção: ";
+        cin >> opcao;
+
+        switch(opcao) {
+            case 1: saque(saldo); break;
+            case 2: deposito(saldo); break;
+            case 3: consultarSaldo(saldo); break;
+            case 0: cout << "Operação encerrada." << endl; break;
+            default: cout << "Opção inválida!" << endl;
+        }
+    } while(opcao != 0);
+}
+
+int main() {
+    // Chamando a função menu do caixa eletrônico
+    menu();
+    return 0;
+}
