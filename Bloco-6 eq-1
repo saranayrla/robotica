@@ -1,0 +1,46 @@
+#include <iostream>
+using namespace std;
+
+void somar() {
+    double a, b;
+    cout << "Digite dois números para somar: ";
+    cin >> a >> b;
+    cout << "Resultado da soma: " << (a + b) << endl;
+}
+
+void subtrair() {
+    double a, b;
+    cout << "Digite dois números para subtrair: ";
+    cin >> a >> b;
+    cout << "Resultado da subtração: " << (a - b) << endl;
+}
+
+void multiplicar() {
+    double a, b;
+    cout << "Digite dois números para multiplicar: ";
+    cin >> a >> b;
+    cout << "Resultado da multiplicação: " << (a * b) << endl;
+}
+
+void menu() {
+    int opcao;
+    cout << "Escolha uma operação:" << endl;
+    cout << "1 - Soma" << endl;
+    cout << "2 - Subtração" << endl;
+    cout << "3 - Multiplicação" << endl;
+    cout << "Digite a opção desejada: ";
+    cin >> opcao;
+
+    switch(opcao) {
+        case 1: somar(); break;
+        case 2: subtrair(); break;
+        case 3: multiplicar(); break;
+        default: cout << "Opção inválida!" << endl;
+    }
+}
+
+int main() {
+    // Chamando a função menu
+    menu();
+    return 0;
+}
