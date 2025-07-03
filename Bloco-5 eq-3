@@ -1,0 +1,21 @@
+//funcoes.h
+#ifndef FUNCOES_H
+#define FUNCOES_H
+#include <iostream>
+using namespace std;
+
+void mostrarInfo() {
+    cout << "=== Informações do Programa ===" << endl;
+    cout << "Este programa demonstra o uso de cabeçalhos." << endl;
+}
+#endif
+//main.cpp
+#include <iostream>
+#include "funcoes.h"
+
+using namespace std;
+
+int main() {
+    mostrarInfo();
+    return 0;
+    }
