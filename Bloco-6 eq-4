@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+template <typename T>
+void trocarValores(T *a, T *b) {
+    T temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+int main() {
+    int x = 10, y = 20;
+    cout << "Antes da troca (int): x = " << x << ", y = " << y << endl;
+    trocarValores(&x, &y);
+    cout << "Depois da troca (int): x = " << x << ", y = " << y << endl;
+
+    float p = 1.5f, q = 2.5f;
+    cout << "\nAntes da troca (float): p = " << p << ", q = " << q << endl;
+    trocarValores(&p, &q);
+    cout << "Depois da troca (float): p = " << p << ", q = " << q << endl;
+
+    return 0;
+}
