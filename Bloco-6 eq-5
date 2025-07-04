@@ -1,0 +1,48 @@
+//funcoes.h
+
+#pragma once
+
+#include <iostream>
+using namespace std;
+
+void funcPorValor(int a) {
+    a = a * 2;
+    cout << "Dentro de funcPorValor: " << a << endl;
+}
+
+void funcPorReferencia(int &b) {
+    b = b * 2;
+    cout << "Dentro de funcPorReferencia: " << b << endl;
+}
+
+void funcPorPonteiro(int *c) {
+    if (c != nullptr) {
+        *c = (*c) * 2;
+        cout << "Dentro de funcPorPonteiro: " << *c << endl;
+    }
+}
+//main.cpp
+#include <iostream>
+#include "funcoes.h"
+using namespace std;
+
+int main() {
+    int valor;
+
+    valor = 5;
+    cout << "Valor original: " << valor << endl;
+    funcPorValor(valor);
+    cout << "Valor após funcPorValor: " << valor << " (permaneceu igual)" << endl << endl;
+
+    valor = 5;
+    cout << "Valor original: " << valor << endl;
+    funcPorReferencia(valor);
+    cout << "Valor após funcPorReferencia: " << valor << endl << endl;
+
+    valor = 5;
+    cout << "Valor original: " << valor << endl;
+    funcPorPonteiro(&valor);
+    cout << "Valor após funcPorPonteiro: " << valor << endl;
+
+    return 0;
+}
