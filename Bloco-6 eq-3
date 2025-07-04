@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+struct Pessoa {
+    string nome;
+    int idade;
+    double altura;
+};
+
+void exibirPessoa(const Pessoa *p) {
+    cout << "Nome: " << p->nome << endl;
+    cout << "Idade: " << p->idade << " anos" << endl;
+    cout << "Altura: " << p->altura << " m" << endl;
+}
+
+int main() {
+    Pessoa pessoa;
+
+    cout << "Digite o nome: ";
+    cin >> pessoa.nome;
+    cout << "Digite a idade: ";
+    cin >> pessoa.idade;
+    cout << "Digite a altura (em metros): ";
+    cin >> pessoa.altura;
+
+    exibirPessoa(&pessoa);
+
+    return 0;
+}
